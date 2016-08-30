@@ -1,0 +1,23 @@
+{
+  "name": "netpi",
+  "version": "1.0.0",
+  "description": "A personal project to help me get updates on my email, school grades and more.",
+  "main": "index.js",
+  "dependencies": {
+    "play-sound": "^0.0.9"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/V1RE/NetPi.git"
+  },
+  "author": "Niels Mentink <niels.mentink@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/V1RE/NetPi/issues"
+  },
+  "homepage": "https://github.com/V1RE/NetPi#readme"
+}
