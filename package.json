@@ -4,7 +4,13 @@
   "description": "A personal project to help me get updates on my email, school grades and more.",
   "main": "index.js",
   "dependencies": {
-    "play-sound": "^0.0.9"
+    "express": "^4.14.0",
+    "formidable": "^1.0.17",
+    "jquery": "^3.1.0",
+    "moment": "^2.14.1",
+    "play-sound": "^0.0.9",
+    "request": "^2.74.0",
+    "util": "^0.10.3"
   },
   "devDependencies": {},
   "scripts": {
