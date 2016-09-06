@@ -22,8 +22,10 @@ app.post('/', function (req, res) {
     res.writeHead(200, {'content-type': 'text/plain'});
     var alarmvar = fields.alarm.toString();
     url = fields.url.toString();
-    if (moment(alarmvar, "DD HH:mm").isValid()) {
-      alarmtime = moment(alarmvar, "DD HH:mm");
+    console.log(alarmvar);
+    if (moment(alarmvar, "D HH:mm").isValid()) {
+      alarmtime = moment(alarmvar, "D HH:mm");
+      console.log(alarmtime)
       if (url.match(ytregexp)) {
 		    downloadmp3(url);
       }

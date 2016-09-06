@@ -3,12 +3,25 @@
   <head>
     <meta charset="utf-8">
     <title>test</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/material.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   </head>
   <body>
     <form action="/" method="post" enctype="application/x-www-form-urlencoded">
-      <p>Alarm time : <input type="text" name="alarm"></p>
-      <p>Youtube url: <input type="text" name="url"></p>
-      <input type="submit" value="Submit">
+      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+        <input name="alarm" type="text" class="mdl-textfield__input" id="alarmtime">
+        <label for="alarmtime" class="mdl-textfield__label">Alarm</label>
+      </div>
+      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+        <input name="url" type="url" class="mdl-textfield__input" id="yturl">
+        <label for="yturl" class="mdl-textfield__label">Youtube URL</label>
+      </div>
+      <br>
+      <input value="Set alarm" type="submit" class="mdl-button mdl-js-button mdl-js-ripple-effect">
     </form>
+    
+    <script src="js/material.js"></script>
   </body>
 </html>
