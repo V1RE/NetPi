@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>test</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/material.css">
@@ -9,19 +10,64 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   </head>
   <body>
-    <form action="/" method="post" enctype="application/x-www-form-urlencoded">
-      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-        <input name="alarm" type="text" class="mdl-textfield__input" id="alarmtime">
-        <label for="alarmtime" class="mdl-textfield__label">Alarm</label>
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
+      <header class="mdl-layout__header">
+        <div class="mdl-layout__header-row">
+          <span class="mdl-layout-title">NetPi</span>
+          <div class="mdl-layout-spacer"></div>
+        </div>
+      </header>
+      <div class="mdl-layout__drawer">
+        <span class="mdl-layout-title">NetPi</span>
+        <nav class="mdl-navigation">
+          <a href="" class="mdl-navigation__link">Temp</a>
+          <a href="" class="mdl-navigation__link">Temp</a>
+          <a href="" class="mdl-navigation__link">Temp</a>
+          <a href="" class="mdl-navigation__link">Temp</a>
+        </nav>
       </div>
-      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-        <input name="url" type="url" class="mdl-textfield__input" id="yturl">
-        <label for="yturl" class="mdl-textfield__label">Youtube URL</label>
-      </div>
-      <br>
-      <input value="Set alarm" type="submit" class="mdl-button mdl-js-button mdl-js-ripple-effect">
-    </form>
+      <main class="mdl-layout__content">
+        <div class="page-content">
+          <div class="mdl-grid">
+            <div class="mdl-cell mdl-cell--3-col">
+              <!-- empty cell for spacing -->
+            </div>
+            <div class="mdl-cell mdl-cell--6-col">
+              <form action="/" method="post" enctype="application/x-www-form-urlencoded">
+                <div class="welcome-card-wide mdl-card mdl-shadow--2dp">
+                  <div class="mdl-card__title">
+                    <h2 class="mdl-card__title-text">Add an alarm</h2>
+                  </div>
+                  <div class="mdl-card__supporting-text">
+                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                      <input name="alarm" type="text" class="mdl-textfield__input" id="alarmtime">
+                      <label for="alarmtime" class="mdl-textfield__label">Alarm</label>
+                    </div>
+                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                      <input name="url" type="url" class="mdl-textfield__input" id="yturl">
+                      <label for="yturl" class="mdl-textfield__label">Youtube URL</label>
+                    </div>
+                    <br>
+                  </div>
+                  <div class="mdl-card__actions mdl-card--border">
+                    <input value="Set alarm" type="submit" class="mdl-button mdl-button--accent mdl-js-button mdl-js-ripple-effect mdl-button">
+                  </div> 
+                  <div class="mdl-card__menu">
+                    <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect" type="reset" id="clearAllIcon">
+                      <i class="material-icons">clear_all</i>
+                    </button>
+                    <div class="mdl-tooltip" data-mdl-for="clearAllIcon">Clear</div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
     
+    <!--  Adding Jquery 3.1.0 and the mdl javascript files  -->
+    <script src="js/jquery.min.js"></script> 
     <script src="js/material.js"></script>
   </body>
 </html>
