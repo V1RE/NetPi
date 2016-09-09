@@ -17,3 +17,31 @@ html .welcome-card-wide .mdl-card__title {
 html .welcome-card-wide .mdl-card__menu {
   color: #FFF;
 }
+html ::-webkit-scrollbar {
+  height: 18px;
+  width: 18px;
+}
+html ::-webkit-scrollbar-button {
+  background-color: #FAFAFA;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+html ::-webkit-scrollbar-corner {
+  background-color: #FAFAFA;
+}
+html ::-webkit-scrollbar-thumb:hover {
+  border-radius: 9px;
+  border: solid 6px #FAFAFA;
+  background-color: #bdbdbd;
+}
+html ::-webkit-scrollbar-thumb {
+  border-radius: 9px;
+  border: solid 6px #FAFAFA;
+  background-color: #e0e0e0;
+}
+html ::-webkit-scrollbar-track {
+  background-color: #FAFAFA;
+}
+html ::-webkit-scrollbar-track {
+  background-color: transparent;
+}
