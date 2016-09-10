@@ -23,6 +23,7 @@ app.post('/', function (req, res) {
     var alarmvar = fields.alarm.toString();
     url = fields.url.toString();
     console.log(alarmvar);
+//    maybe use python dateutil for parsing
     if (moment(alarmvar, "D HH:mm").isValid()) {
       alarmtime = moment(alarmvar, "D HH:mm");
       console.log(alarmtime)
@@ -40,7 +41,7 @@ app.post('/', function (req, res) {
         });
       }, alarmtime - moment());
     } else {
-      res.end("ERROR, date provided is invalid!")
+      res.end("ERROR, date provided is invalid!\nPlease use the following format: \"D HH:mm\"\nWhere D is the day of the current month, \nHH is the hour in 24-hour format and mm is minutes with zeros.")
     }
   });
 });
